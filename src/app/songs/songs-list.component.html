@@ -1,0 +1,75 @@
+<div class="card filter-section">
+    <div class="card-header">
+       <span>{{pageTitle}}</span> <span>{{ratingScore}}</span>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-2">Filter by:</div>
+            <div class="col-md-4">
+                <input class="bg-dark text-light filter-input" type="text" [(ngModel)]='listFilter' />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Filtered by: {{listFilter}}</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="table-responsive" *ngIf="songs && songs.length">
+    <table class="table table-dark table-striped hover">
+        <thead>
+            <tr>
+                <th><button class="btn btn-primary btn-showImage" (click)='toggleImage()'>{{showImage? 'Hide' : 'Show'}}
+                        Cover</button></th>
+                <th>#</th>
+                <th>Track Name</th>
+                <th>Artist Name</th>
+                <th>Genre</th>
+                <!-- <th>Beats Per Minute</th>
+                <th>Energy</th>
+                <th>Danceability</th>
+                <th>Loudness (dB)</th>
+                <th>Liveness</th>
+                <th>Valence</th> -->
+                <th>Length</th>
+                <th>Acousticness</th>
+                <th>Speechiness</th>
+                <th>Popularity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let song of filteredSongs">
+                <td><span *ngIf='showImage && song.imageUrl'>
+                        <img class="cover" [src]='song.imageUrl' [title]='song.TrackName' [width]='imageWidth'
+                            [height]='imageHeight' [style.padding.px]='imagePadding'>
+                    </span>
+                    <span *ngIf='showImage && !(song.imageUrl)'>
+                        <img class="cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs5Log4MooA74arSp4B3DFr2fgVeVcWTu4rgIPtowpGURbyKSX&s"/>
+                    </span>
+
+                </td>
+                <td>{{song.Id}}</td>
+                <td><a [routerLink]="['/songs', song.Id]">
+                        {{song.TrackName | titlecase}}</a>
+                </td>
+                <td>{{song['Artist Name'] | convertToSpaces: '-'}}</td>
+                <td>{{song.Genre}}</td>
+                <!-- <td>{{song['Beats Per Minute']}}</td>
+                <td>{{song.Energy}}</td>
+                <td>{{song.Danceability}}</td>
+                <td>{{song['Loudness (dB)'] }}</td>
+                <td>{{song.Liveness}}</td>
+                <td>{{song.Valence}}</td> -->
+                <td>{{song.Length}}</td>
+                <td>{{song.Acousticness}}</td>
+                <td>{{song.Speechiness}}</td>
+                <td>
+                    <app-star [rating]='song.Popularity' (ratingClicked)='onRatingClicked($event)'></app-star>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

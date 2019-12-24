@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~font-awesome/css/font-awesome.min.css';
+
+.nav-link {font-size: 1.2em;}
+a.nav-link {color: black}
+.color-green {color: #1DB954;}
+.bg-green {background-color: #1DB954; color:#fff}
+.btn-primary {border-color: #1DB954; box-shadow: #1DB954;}
+.btn-primary:focus, .btn-primary:active {box-shadow: #1DB954;}
+.bg-darker {background-color: #111;}
+
+.card {background-color: #272c31 !important; color:#eee}
+.card-header span:first-child {font-weight: bold; margin-right: 8px;}
+.card-header span:nth-child(2) {color:#ccc}

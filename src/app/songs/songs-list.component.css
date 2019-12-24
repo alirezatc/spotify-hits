@@ -1,0 +1,8 @@
+/* thead{color: #e52165} */
+tbody td:last-child {color: #8e7803;} 
+tbody td:first-child {text-align: center;}
+a {text-decoration: none; color: white;}
+.cover {width: 50px; height: 50px; overflow: hidden;}
+.btn-showImage {background-color: #444; font-size: .75em; border-radius: 12px;}
+.filter-input {border-color: #555; border-radius: 20px; padding: 5px 10px; outline: #444;}
+

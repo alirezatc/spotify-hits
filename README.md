@@ -1,6 +1,6 @@
 # SpotifyHit
 This project uses Angular 8 and TypeScript to generate a list of top songs.
-It uses an api from kaggle https://www.kaggle.com/leonardopena/top50spotify2019 automatic! [Kaggle](https://www.kaggle.com/leonardopena/top50spotify2019)
+It uses an api from [Kaggle](https://www.kaggle.com/leonardopena/top50spotify2019)
 
 Used Techniques are as follows:
 1. Routing, guard, parameter passing
@@ -9,7 +9,7 @@ Used Techniques are as follows:
 4. Filtering
 5. Nested Component
 6. Http Request, Async, Subscribing, Observable, Service Registration
-
+-----------------------------------------------------------------
 # SpotifyHit
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.

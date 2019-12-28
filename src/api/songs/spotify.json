@@ -68,7 +68,7 @@
     "Popularity": 86
   },
   {
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/3/30/Post_Malone_-_Goodbyes.png",
     "Id": 5,
     "TrackName": "Goodbyes (Feat. Young Thug)",
     "Artist Name": "Post Malone",
@@ -85,7 +85,7 @@
     "Popularity": 94
   },
   {
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/6/69/Ed_Sheeran_%26_Justin_Bieber_-_I_Don%27t_Care.png",
     "Id": 6,
     "TrackName": "I Don't Care (with Justin Bieber)",
     "Artist Name": "Ed Sheeran",

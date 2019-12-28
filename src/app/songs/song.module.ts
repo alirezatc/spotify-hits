@@ -11,6 +11,7 @@ import { SharedModule } from '../shared/shared.module';
   declarations: [
     SongsListComponent,
     SongDetailComponent,
+    
     // ConvertToSpacesPipe,
   ],
   imports: [

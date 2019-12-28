@@ -1,6 +1,6 @@
 <div class="card filter-section">
     <div class="card-header">
-       <span>{{pageTitle}}</span> <span>{{ratingScore}}</span>
+       <span>{{pageTitle}}</span><span *ngIf="ratingScore" class="border-r">{{ratingScore}}</span>
     </div>
     <div class="card-body">
         <div class="row">

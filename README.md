@@ -1,5 +1,6 @@
 # SpotifyHit
-This project uses Angular 8 and TypeScript to generate a list of top songs.
+This project uses Angular 8 and TypeScript to generate a list of top songs. It has features such as filtering the songs, showing songs rating, and song description.
+
 It uses an api from [Kaggle](https://www.kaggle.com/leonardopena/top50spotify2019)
 
 Used Techniques are as follows:
